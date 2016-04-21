@@ -4,6 +4,7 @@
 	<meta	charset="UTF-8"/>
 	<title>Loja Virtual</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
 	<meta name=viewport content="width=device-width"/>
 	<style>
 		.navbar-header button {
@@ -27,13 +28,15 @@
 	<header>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-header">
-                <a href="#" class="navbar-brand">Caelum</a>
-                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">Menu</button>
+                <a href="#home" class="navbar-brand">Caelum</a>
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">
+                	Menu
+                </button>
             </div>
             <div class="collapse navbar-collapse">
 				<ul class="navbar-nav nav">
-				    <li><a href="#">Novidades</a></li>
-				    <li><a href="#">Mais vendidos</a></li>
+				    <li><a href="#novidades">Novidades</a></li>
+				    <li><a href="#maisVendidos">Mais vendidos</a></li>
 				    <li class="dropdown">
 				        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 				            Camisetas
@@ -58,7 +61,7 @@
 
 	<main>
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row" id="home">
 				<div id="carousel" class="carousel slide" data-ride="carousel">
 				    <div class="carousel-inner" role="listbox">
 				        <div class="item active">
@@ -92,9 +95,11 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-9">
-				<h3 class="text-center">Novidades</h3>
+				<div id="novidades">
+					<h3 class="text-center">Novidades</h3>
+				</div>
 
-				<div class="col-xs-12 col-md-4 thumbnail text-center">
+				<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp data-wow-delay="1s"">
 					<figure>
 						<img src="img/camisa-azul.png" alt="camisa azul importada"/>
 
@@ -113,7 +118,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-12 col-md-4 thumbnail text-center">
+				<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp data-wow-delay="1s"">
 					<figure>
 						<img src="img/camisa-rosa.png" alt="camisa azul importada"/>
 
@@ -132,7 +137,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-12 col-md-4 thumbnail text-center">
+				<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp data-wow-delay="1s"">
 					<figure>
 						<img src="img/camisa-azul.png" alt="camisa azul importada"/>
 
@@ -151,6 +156,68 @@
 					</div>
 				</div>
 
+
+				<div id="maisVendidos">	
+						<h3 class="text-center">Mais Vendidos</h3>
+				</div>
+				<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp data-wow-delay="1s"">
+					<figure>
+						<img src="img/camisa-azul.png" alt="camisa azul importada"/>
+
+						<div>
+							<h4>Camisa Azul Importada</h4>
+							<p>Camisa azul importada com preço acessível e com pano de qualidade</p>
+						</div>
+					</figure>
+		             <div class="btn-group">
+						<a href="#" class="btn btn-default">R$ 190,00</a>
+						<a href="#" class="btn btn-primary">
+			    			<span class="glyphicon glyphicon-shopping-cart"></span>
+
+			    			Comprar
+			    		</a>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp data-wow-delay="1s"">
+					<figure>
+						<img src="img/camisa-rosa.png" alt="camisa azul importada"/>
+
+						<div>
+							<h4>Camisa Rosa Importada</h4>
+							<p>Camisa rosa importada com preço acessível e com pano de qualidade</p>
+						</div>
+					</figure>
+		             <div class="btn-group">
+						<a href="#" class="btn btn-default">R$ 220,00</a>
+						<a href="#" class="btn btn-primary">
+			    			<span class="glyphicon glyphicon-shopping-cart"></span>
+
+			    			Comprar
+			    		</a>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-4 thumbnail text-center wow fadeInUp data-wow-delay="1s"">
+					<figure>
+						<img src="img/camisa-azul.png" alt="camisa azul importada"/>
+
+						<div>
+							<h4>Camisa Azul Nacional</h4>
+							<p>Camisa azul nacional com preço acessível e com pano de qualidade</p>
+						</div>
+					</figure>
+		             <div class="btn-group">
+						<a href="#" class="btn btn-default">R$ 150,00</a>
+						<a href="#" class="btn btn-primary">
+			    			<span class="glyphicon glyphicon-shopping-cart"></span>
+
+			    			Comprar
+			    		</a>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 	</main>
@@ -160,5 +227,9 @@
 	</footer>
 	<script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/wow.min.js" type="text/javascript"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
